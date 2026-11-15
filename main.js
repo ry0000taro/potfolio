@@ -49,6 +49,7 @@
     $("cards").innerHTML = "";
     D.works.filter(function (w) { return current === "All" || w.type === current; }).forEach(function (w) {
       var card = el("button", { class: "card reveal in", type: "button", "aria-label": w.title + " の詳細を開く" }, [
+        w.thumb ? el("div", { class: "card-thumb" }, [el("img", { src: w.thumb, alt: w.title + " のサムネイル", loading: "lazy" })]) : null,
         w.badge ? el("span", { class: "badge", text: "🏆 " + w.badge }) : null,
         el("div", { class: "meta" }, [el("span", { class: "tag", text: w.type }), el("span", { text: w.period })]),
         el("h3", { text: w.title }),

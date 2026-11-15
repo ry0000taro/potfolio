@@ -17,7 +17,7 @@ window.PORTFOLIO = {
     { t: "チームを動かす", d: "PM・リーダーとして、GitHub Issue / Projectでの管理とナレッジ共有の仕組み化。" }
   ],
   awards: [
-    { t: "dip賞(企業賞)", d: "システム情報研究会主催「SysHack 2026」にて、遅刻管理アプリ「Awake」で受賞。" },
+    { t: "dip賞(企業賞)", d: "システム工学研究会主催「SysHack 2026」にて、遅刻管理アプリ「Awake」で受賞。" },
     { t: "技育博 2026 出展", d: "「Awake」「Gashama」を出展。" },
     { t: "The Hack 2026 出展", d: "「Gashama」を出展。" }
   ],
@@ -33,6 +33,7 @@ window.PORTFOLIO = {
       tags: ["Mobile"],
       badge: "dip賞",
       links: [{ label: "GitHub", url: "https://github.com/HYSTpj/AwakeApp" }],
+      thumb: "asset/awake/thumb.png",
       images: [],
       sections: [
         {
@@ -71,6 +72,7 @@ window.PORTFOLIO = {
         { label: "ポスター", url: "https://canva.link/gashama-poster" },
         { label: "GitHub", url: "https://github.com/Team-Seishun/Gashama" }
       ],
+      thumb: "asset/gashama/thumb.png",
       images: [],
       sections: [
         {
@@ -156,6 +158,7 @@ window.PORTFOLIO = {
       tech: ["Kotlin", "MVVM", "Clean Architecture", "Hilt", "Coil"],
       tags: ["Mobile"],
       links: [{ label: "GitHub", url: "https://github.com/ry0000taro/Gaplay" }],
+      thumb: "asset/gaplay/thumb.png",
       images: [],
       sections: [
         {
@@ -174,6 +177,7 @@ window.PORTFOLIO = {
       tech: ["Kotlin", "C / C++", "Arduino", "ESP32", "Figma"],
       tags: ["ハード", "Mobile"],
       links: [],
+      thumb: "asset/pop-runner/thumb.png",
       images: [],
       sections: [
         {
@@ -212,7 +216,7 @@ window.PORTFOLIO = {
     },
     {
       period: "2026年4月(2週間)",
-      title: "SysHack 出場(システム情報研究会主催)",
+      title: "SysHack 出場(システム工学研究会主催)",
       body: "遅刻管理アプリ「Awake」を作成。企業賞のdip賞を受賞しました。",
       links: []
     },
@@ -229,7 +233,7 @@ window.PORTFOLIO = {
       links: []
     },
     {
-      period: "2025年3月〜5月(3ヶ月)",
+      period: "2024年11月〜2025年4月",
       title: "iCAN'25",
       body: "ハードウェアとモバイルアプリを組み合わせた作品「POP RUNNER」を制作しました。",
       links: []
