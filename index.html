@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ry0000taro | Portfolio</title>
+  <meta name="description" content="ry0000taro のポートフォリオ。Kotlin / Flutter によるモバイルアプリ開発、ハッカソン・インターンの実績をまとめています。" />
+  <meta property="og:title" content="ry0000taro | Portfolio" />
+  <meta property="og:description" content="Kotlin / Flutter によるモバイルアプリ開発の制作物・経験・スキル" />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav" id="nav">
+    <a class="brand" href="#top">ry0000taro</a>
+    <button class="nav-toggle" id="navToggle" aria-label="メニュー" aria-expanded="false"><span></span><span></span></button>
+    <nav id="navLinks">
+      <a href="#about">About</a>
+      <a href="#works">Works</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-inner">
+        <p class="eyebrow">PORTFOLIO</p>
+        <h1 id="heroName"></h1>
+        <p class="hero-role" id="heroRole"></p>
+        <p class="hero-tagline" id="heroTagline"></p>
+        <p class="hero-intro" id="heroIntro"></p>
+        <div class="hero-cta">
+          <a class="btn primary" href="#works">制作物を見る</a>
+          <a class="btn" href="#contact">Contact</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="wrap">
+        <h2 class="sec-title"><span>About</span></h2>
+        <div class="about-grid">
+          <div class="about-text" id="aboutText"></div>
+          <div class="strengths" id="strengths"></div>
+        </div>
+        <h3 class="sub-title">Awards &amp; Highlights</h3>
+        <div class="awards" id="awards"></div>
+      </div>
+    </section>
+
+    <section class="section alt" id="works">
+      <div class="wrap">
+        <h2 class="sec-title"><span>Works</span><small>タップすると詳細が見られます</small></h2>
+        <div class="filters" id="filters"></div>
+        <div class="cards" id="cards"></div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="wrap">
+        <h2 class="sec-title"><span>Experience</span></h2>
+        <ol class="timeline" id="timeline"></ol>
+      </div>
+    </section>
+
+    <section class="section alt" id="skills">
+      <div class="wrap">
+        <h2 class="sec-title"><span>Skills</span><small>太字は特に使い込んでいるもの</small></h2>
+        <div class="skills" id="skillsGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="wrap">
+        <h2 class="sec-title"><span>Contact / Link</span></h2>
+        <p class="contact-lead">お仕事・インターン・ご相談など、お気軽にご連絡ください。</p>
+        <a class="mail" id="mailLink" href="#"></a>
+        <div class="links" id="links"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap"><small>&copy; <span id="year"></span> ry0000taro</small></div>
+  </footer>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <article class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+      <button class="modal-close" data-close aria-label="閉じる">&times;</button>
+      <div id="modalBody"></div>
+    </article>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
