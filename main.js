@@ -51,12 +51,9 @@
       var card = el("button", { class: "card reveal in", type: "button", "aria-label": w.title + " の詳細を開く" }, [
         w.thumb ? el("div", { class: "card-thumb" }, [el("img", { src: w.thumb, alt: w.title + " のサムネイル", loading: "lazy" })]) : null,
         w.badge ? el("span", { class: "badge", text: "🏆 " + w.badge }) : null,
-        el("div", { class: "meta" }, [el("span", { class: "tag", text: w.type }), el("span", { text: w.period })]),
         el("h3", { text: w.title }),
-        el("p", { text: w.blurb }),
         el("div", { class: "role", text: "役割:" + w.role }),
-        el("div", { class: "chips" }, w.tech.map(function (t) { return el("span", { text: t }); })),
-        el("span", { class: "more", text: "詳細を見る →" })
+        el("div", { class: "chips" }, w.tech.map(function (t) { return el("span", { text: t }); }))
       ]);
       card.addEventListener("click", function () { openModal(w); });
       $("cards").appendChild(card);
